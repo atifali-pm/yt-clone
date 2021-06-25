@@ -1,5 +1,8 @@
 <div>
 
+    @if($channel->image)
+        <img src="{{ asset('images/' . $channel->image) }}" alt="">
+    @endif
     <form wire:submit.prevent="update">
         <div class="form-group">
             <label for="name">Name</label>
