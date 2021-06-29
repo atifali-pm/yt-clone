@@ -2,14 +2,40 @@
 
 namespace App\Http\Livewire\Video;
 
+use App\Models\Channel;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class CreateVideo extends Component
 {
-    public $name = 'Atif Ali';
+    use WithFileUploads;
+    public $channel;
+    public $video;
+    public $videoFile;
+
+    public function mount(Channel $channel)
+    {
+        $this->channel = $channel;
+    }
+
     public function render()
     {
         return view('livewire.video.create-video')
             ->extends('layouts.app');
+    }
+
+    public function fileCompleted()
+    {
+
+
+    }
+
+    public function upload()
+    {
+        $this->validate(
+            [
+                'videoFile' => 'required|mimes:mp4|max:102400',
+            ]
+        );
     }
 }

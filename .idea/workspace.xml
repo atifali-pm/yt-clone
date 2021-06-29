@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="145bcc0a-2a0f-4929-bd01-3d464b5b7045" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Video/CreateVideo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Video/CreateVideo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/video/create-video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/video/create-video.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +175,7 @@
       <workItem from="1623743812321" duration="605000" />
       <workItem from="1624604097907" duration="684000" />
       <workItem from="1624606089305" duration="6747000" />
-      <workItem from="1624882111110" duration="3560000" />
+      <workItem from="1624882111110" duration="4521000" />
     </task>
     <servers />
   </component>
