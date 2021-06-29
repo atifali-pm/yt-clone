@@ -13,7 +13,7 @@ class Video extends Model
 
     public function getRouteKeyName()
     {
-        return 'uid';
+        return 'uid ';
     }
 
     public function channel()

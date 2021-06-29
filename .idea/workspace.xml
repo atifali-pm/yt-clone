@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145bcc0a-2a0f-4929-bd01-3d464b5b7045" name="Default Changelist" comment="" />
+    <list default="true" id="145bcc0a-2a0f-4929-bd01-3d464b5b7045" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +18,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -126,6 +134,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1tkfyaXyN0HnMKmp2lUZ8zjVMpq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -166,7 +175,8 @@
       <workItem from="1623403621276" duration="7329000" />
       <workItem from="1623743812321" duration="605000" />
       <workItem from="1624604097907" duration="684000" />
-      <workItem from="1624606089305" duration="5918000" />
+      <workItem from="1624606089305" duration="6747000" />
+      <workItem from="1624882111110" duration="3560000" />
     </task>
     <servers />
   </component>
@@ -186,9 +196,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2376" y="174" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1623403520060" />
-    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1624612431098">
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1624957651484">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1624612431098" />
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1624957651484" />
   </component>
 </project>
