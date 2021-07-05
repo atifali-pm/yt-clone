@@ -1,9 +1,25 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card"
+                 x-data="{ isUploading: false, progress: 0 }"
+                 x-on:livewire-upload-start="isUploading = true"
+                 x-on:livewire-upload-finish="isUploading = false, $wire.fileCompleted()"
+                 x-on:livewire-upload-error="isUploading = false"
+                 x-on:livewire-upload-progress="progress = $event.detail.progress"
+            >
                 <div class="card-body">
-                    <input type="file" wire:model='videoFile' wire:change="upload">
+                    <div class="progress my-4">
+                        <div class="progress-bar" role="progressbar" :style="`width: ${progress}%`"></div>
+                    </div>
+                    <form x-show >
+                        <input type="file" wire:model='videoFile'>
+                    </form>
+                    @error('videoFile')
+                        <div class="alert alert-danger">
+                            {{ $message }}
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

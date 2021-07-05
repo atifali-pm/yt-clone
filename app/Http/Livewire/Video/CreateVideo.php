@@ -9,9 +9,14 @@ use Livewire\WithFileUploads;
 class CreateVideo extends Component
 {
     use WithFileUploads;
-    public $channel;
-    public $video;
-    public $videoFile;
+
+    public    $channel;
+    public    $video;
+    public    $videoFile;
+    protected $rules
+        = [
+            'videoFile' => 'required|mimes:mp4|max:1228800',
+        ];
 
     public function mount(Channel $channel)
     {
@@ -26,16 +31,24 @@ class CreateVideo extends Component
 
     public function fileCompleted()
     {
+        // validation
+        $this->validate();
 
-
-    }
-
-    public function upload()
-    {
-        $this->validate(
+        $this->video = $this->channel->videos()->create(
             [
-                'videoFile' => 'required|mimes:mp4|max:102400',
-            ]
-        );
+                'title' => 'untitled',
+                'description' => 'none',
+                'uid' => uniqid(true),
+                'visiblity' => 'private',
+
+            ]);
+
+        return redirect()->route('video.edit', [
+            'channel' => $this->channel,
+            'video' => $this->video,
+        ]);
+
     }
+
+
 }
