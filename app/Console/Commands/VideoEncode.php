@@ -51,7 +51,9 @@ class VideoEncode extends Command
               ->addFormat($high, function($filters) {
                   $filters->resize(1280, 720);
               })
-              ->toDisk('videos-temp')
-              ->save('/test/file.m3u8');
+              ->onProgress(function($progress) {
+                  $this->info("Progress= {$progress}%");
+              })
+              ->toDisk('videos-temp')->save('/test/file.m3u8');
     }
 }
