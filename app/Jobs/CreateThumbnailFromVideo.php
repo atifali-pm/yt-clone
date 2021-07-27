@@ -41,5 +41,11 @@ class CreateThumbnailFromVideo implements ShouldQueue
               ->export()
               ->toDisk('videos')
               ->save($destination);
+
+        $this->video->update(
+            [
+                'thumbnail_image' => $this->video->uid . '.png'
+            ]
+        );
     }
 }
